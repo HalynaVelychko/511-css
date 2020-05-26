@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&display=swap');
+
+:root{
+    font-family: 'Alegreya Sans', sans-serif;
+    --main-color: black;
+    --accent-color: white;
+}
+h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+header .banner h1,
+header nav .logo {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+header nav .top-menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+header nav .top-menu li a {
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    header nav .top-menu {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+header .banner {
+    background-image: url(../img/new-yourk.jpg);
+    min-height: 400px;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .banner h1{
+    color: var(--accent-color);
+}
